@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri Mar  8 14:15:57 2024
+# Process ID: 20643
+# Current directory: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1
+# Command line: vivado -log design_1_dlmb_v10_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_v10_1.tcl
+# Log file: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1/design_1_dlmb_v10_1.vds
+# Journal file: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1/vivado.jou
+# Running On: artecslab005, OS: Linux, CPU Frequency: 3799.385 MHz, CPU Physical cores: 4, Host memory: 33528 MB
+#-----------------------------------------------------------
+source design_1_dlmb_v10_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.941 ; gain = 17.867 ; free physical = 19332 ; free virtual = 24641
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_dlmb_v10_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 2a9323e2a1c6ec54 to dir: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_dlmb_v10_0_stub.v to /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1/design_1_dlmb_v10_1_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_dlmb_v10_0_sim_netlist.vhdl to /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1/design_1_dlmb_v10_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_dlmb_v10_0.dcp to /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1/design_1_dlmb_v10_1.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_dlmb_v10_0_stub.vhdl to /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1/design_1_dlmb_v10_1_stub.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_dlmb_v10_0_sim_netlist.v to /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_dlmb_v10_1_synth_1/design_1_dlmb_v10_1_sim_netlist.v.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_dlmb_v10_1, cache-ID = 2a9323e2a1c6ec54.
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 14:16:06 2024...

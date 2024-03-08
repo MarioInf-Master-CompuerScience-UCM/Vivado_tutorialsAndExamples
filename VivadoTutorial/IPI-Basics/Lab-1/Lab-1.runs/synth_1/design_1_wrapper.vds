@@ -1,0 +1,535 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri Mar  8 14:36:35 2024
+# Process ID: 26116
+# Current directory: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/vivado.jou
+# Running On: artecslab005, OS: Linux, CPU Frequency: 3800.560 MHz, CPU Physical cores: 4, Host memory: 33528 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.910 ; gain = 16.867 ; free physical = 20806 ; free virtual = 26304
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xcu200-fsgd2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26144
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2857.258 ; gain = 397.684 ; free physical = 18959 ; free virtual = 24445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:224]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:224]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'design_1_axi_bram_ctrl_0_bram_0' has 16 connections declared, but only 14 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:224]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:262]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:262]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hier_0_imp_MHUNTD' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:478]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_mdm_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bscan_ext_tdo' of module 'design_1_mdm_1_0' is unconnected for instance 'mdm_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:601]
+WARNING: [Synth 8-7023] instance 'mdm_1' of module 'design_1_mdm_1_0' has 21 connections declared, but only 20 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:601]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:624]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_0' has 52 connections declared, but only 51 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:624]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_10TOAOI' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:922]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1068]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1068]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1114]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1114]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1139]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1139]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1139]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_10TOAOI' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:922]
+INFO: [Synth 8-6155] done synthesizing module 'hier_0_imp_MHUNTD' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:478]
+INFO: [Synth 8-6157] synthesizing module 'hier_1_imp_JJAEZ6' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:700]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_mdm_1_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'bscan_ext_tdo' of module 'design_1_mdm_1_1' is unconnected for instance 'mdm_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:823]
+WARNING: [Synth 8-7023] instance 'mdm_1' of module 'design_1_mdm_1_1' has 21 connections declared, but only 20 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:823]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_microblaze_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_1' is unconnected for instance 'microblaze_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:846]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_1' has 52 connections declared, but only 51 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:846]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_KURX7E' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1156]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_dlmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_1' is unconnected for instance 'dlmb_v10' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1302]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_1' has 25 connections declared, but only 24 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1302]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_ilmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_1' is unconnected for instance 'ilmb_v10' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1348]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_1' has 25 connections declared, but only 24 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1348]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_lmb_bram_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_1' is unconnected for instance 'lmb_bram' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1373]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_1' is unconnected for instance 'lmb_bram' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1373]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_1' has 16 connections declared, but only 14 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1373]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_KURX7E' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:1156]
+INFO: [Synth 8-6155] done synthesizing module 'hier_1_imp_JJAEZ6' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:700]
+WARNING: [Synth 8-7071] port 'Debug_SYS_Rst' of module 'hier_1_imp_JJAEZ6' is unconnected for instance 'hier_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:314]
+WARNING: [Synth 8-7023] instance 'hier_1' of module 'hier_1_imp_JJAEZ6' has 23 connections declared, but only 22 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:314]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:337]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:337]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:337]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M01_AXI_awqos' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:346]
+WARNING: [Synth 8-7071] port 'M01_AXI_arqos' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:346]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:346]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:346]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'design_1_smartconnect_0_0' has 111 connections declared, but only 107 given [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:346]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:454]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_1' [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_system_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/.Xil/Vivado-26116-artecslab005/realtime/design_1_system_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/opt/xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clk_wiz_1'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:284]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:454]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'smartconnect_0'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:346]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_clk_wiz_1_100M'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:337]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hier_1'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:314]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hier_0'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:290]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_uartlite_0'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:262]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_gpio_0'. This will prevent further optimization [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/synth/design_1.v:239]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2940.227 ; gain = 480.652 ; free physical = 18864 ; free virtual = 24351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2943.195 ; gain = 483.621 ; free physical = 18864 ; free virtual = 24351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2943.195 ; gain = 483.621 ; free physical = 18864 ; free virtual = 24351
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2954.164 ; gain = 0.000 ; free physical = 18856 ; free virtual = 24343
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/hier_0/mdm_1'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/hier_0/mdm_1'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/hier_1/mdm_1'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/hier_1/mdm_1'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1/design_1_system_ila_0_1_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1/design_1_system_ila_0_1_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:185]
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:186]
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:193]
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:196]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_RESETL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:205]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODPRSL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_INTL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:207]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_LPMODE'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:208]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODSELL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:209]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:216]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:217]
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_REFCLK_RESET'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:218]
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:225]
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:226]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:227]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:228]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_RESETL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:237]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODPRSL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:238]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_INTL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_LPMODE'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODSELL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:250]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_REFCLK_RESET'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'PCIE_PERST'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:257]
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SDA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:263]
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SCL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:264]
+WARNING: [Vivado 12-584] No ports matched 'I2C_MAIN_RESETN'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:271]
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SCL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:272]
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SDA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_RX'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:280]
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_TX'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:281]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_TXD_MSP'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_RXD_MSP'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'DDR4_RESET_GATE'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:295]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:299]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:301]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:302]
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:306]
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:307]
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:308]
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'MSP_RSTn'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:323]
+WARNING: [Vivado 12-584] No ports matched 'SW_SET1_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:324]
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED0_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:325]
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED1_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:326]
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED2_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:327]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[34]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:334]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[35]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:335]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[8]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:336]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[8]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:337]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[33]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:338]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[32]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:339]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[39]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:340]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[38]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:341]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[36]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:342]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[37]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:343]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[9]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:344]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[9]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:345]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[57]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:346]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[56]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:347]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[14]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:348]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[14]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:349]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[59]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:350]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[58]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:351]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[61]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:352]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[62]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:353]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[60]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:354]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[63]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:355]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[15]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:356]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[15]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:357]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[9]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:358]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[8]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:359]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:360]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:361]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[11]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:362]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[10]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:363]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[13]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:364]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[12]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:365]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[15]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:366]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[14]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:367]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:368]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:369]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:370]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:371]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:372]
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+Finished Parsing XDC File [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3074.945 ; gain = 0.000 ; free physical = 18813 ; free virtual = 24300
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3074.980 ; gain = 0.000 ; free physical = 18813 ; free virtual = 24300
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/hier_0/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/hier_1/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3074.980 ; gain = 615.406 ; free physical = 18807 ; free virtual = 24295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3074.980 ; gain = 615.406 ; free physical = 18807 ; free virtual = 24295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for diff_clock_rtl_0_clk_n. (constraint file  /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diff_clock_rtl_0_clk_n. (constraint file  /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for diff_clock_rtl_0_clk_p. (constraint file  /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diff_clock_rtl_0_clk_p. (constraint file  /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/smartconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/system_ila_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3074.980 ; gain = 615.406 ; free physical = 18807 ; free virtual = 24295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3074.980 ; gain = 615.406 ; free physical = 18805 ; free virtual = 24294
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3074.980 ; gain = 615.406 ; free physical = 18801 ; free virtual = 24294
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3313.914 ; gain = 854.340 ; free physical = 18490 ; free virtual = 23996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3314.914 ; gain = 855.340 ; free physical = 18489 ; free virtual = 23995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3324.930 ; gain = 865.355 ; free physical = 18481 ; free virtual = 23987
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.805 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.805 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.805 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.805 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.805 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.805 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |design_1_mdm_1_0                |         1|
+|2     |design_1_microblaze_0_0         |         1|
+|3     |design_1_dlmb_bram_if_cntlr_0   |         1|
+|4     |design_1_dlmb_v10_0             |         1|
+|5     |design_1_ilmb_bram_if_cntlr_0   |         1|
+|6     |design_1_ilmb_v10_0             |         1|
+|7     |design_1_lmb_bram_0             |         1|
+|8     |design_1_mdm_1_1                |         1|
+|9     |design_1_microblaze_0_1         |         1|
+|10    |design_1_dlmb_bram_if_cntlr_1   |         1|
+|11    |design_1_dlmb_v10_1             |         1|
+|12    |design_1_ilmb_bram_if_cntlr_1   |         1|
+|13    |design_1_ilmb_v10_1             |         1|
+|14    |design_1_lmb_bram_1             |         1|
+|15    |design_1_axi_bram_ctrl_0_0      |         1|
+|16    |design_1_axi_bram_ctrl_0_bram_0 |         1|
+|17    |design_1_axi_gpio_0_0           |         1|
+|18    |design_1_axi_uartlite_0_0       |         1|
+|19    |design_1_clk_wiz_1_0            |         1|
+|20    |design_1_rst_clk_wiz_1_100M_0   |         1|
+|21    |design_1_smartconnect_0_0       |         1|
+|22    |design_1_system_ila_0_1         |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |design_1_axi_bram_ctrl_0      |     1|
+|2     |design_1_axi_bram_ctrl_0_bram |     1|
+|3     |design_1_axi_gpio_0           |     1|
+|4     |design_1_axi_uartlite_0       |     1|
+|5     |design_1_clk_wiz_1            |     1|
+|6     |design_1_dlmb_bram_if_cntlr   |     2|
+|8     |design_1_dlmb_v10             |     2|
+|10    |design_1_ilmb_bram_if_cntlr   |     2|
+|12    |design_1_ilmb_v10             |     2|
+|14    |design_1_lmb_bram             |     2|
+|16    |design_1_mdm_1                |     2|
+|18    |design_1_microblaze_0         |     2|
+|20    |design_1_rst_clk_wiz_1_100M   |     1|
+|21    |design_1_smartconnect_0       |     1|
+|22    |design_1_system_ila_0         |     1|
+|23    |IBUF                          |     2|
+|24    |IOBUF                         |    32|
+|25    |OBUF                          |     1|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.805 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3339.805 ; gain = 748.445 ; free physical = 18470 ; free virtual = 23971
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3339.812 ; gain = 880.230 ; free physical = 18470 ; free virtual = 23971
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3345.742 ; gain = 0.000 ; free physical = 18762 ; free virtual = 24263
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3418.562 ; gain = 0.000 ; free physical = 18699 ; free virtual = 24197
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 32 instances
+
+Synth Design complete | Checksum: 4e0b82a
+INFO: [Common 17-83] Releasing license: Synthesis
+88 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 3418.598 ; gain = 2029.008 ; free physical = 18695 ; free virtual = 24193
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2700.469; main = 2700.469; forked = 381.086
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4049.328; main = 3418.562; forked = 974.383
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3418.598 ; gain = 0.000 ; free physical = 18687 ; free virtual = 24184
+INFO: [Common 17-1381] The checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 14:37:23 2024...

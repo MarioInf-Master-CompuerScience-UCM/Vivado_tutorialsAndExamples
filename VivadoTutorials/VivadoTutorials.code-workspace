@@ -7,6 +7,9 @@
       "path": "Mux4x1_software"
     },
     {
+      "path": "Mux4x1_hardware"
+    },
+    {
       "path": "."
     },
     {

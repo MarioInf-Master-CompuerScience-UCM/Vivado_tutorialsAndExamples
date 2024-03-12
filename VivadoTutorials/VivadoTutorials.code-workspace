@@ -10,7 +10,7 @@
       "path": "Mux4x1_hardware"
     },
     {
-      "path": "."
+      "path": "Adder_4bits"
     },
     {
       "path": ".."

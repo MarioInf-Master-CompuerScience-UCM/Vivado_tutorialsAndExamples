@@ -8,6 +8,7 @@ Constrúyase un módulo multiplexor 4x1 con línea de control de salida OE, de m
     margin-right: auto;
     margin-top: 1%;
     margin-botton: 1%;
+    background: white;    
 "/>
 
 Pista: si no sois capaces de construir el multiplexor 4x1, podéis fijaros en esta solución. Hay alternativas similares a la solución de la figura que usan un decodificador o búferes triestado, por ejemplo.

@@ -1,0 +1,523 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Mar 14 17:41:14 2024
+# Process ID: 15925
+# Current directory: /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.runs/synth_1
+# Command line: vivado -log Mux4x1_software.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mux4x1_software.tcl
+# Log file: /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.runs/synth_1/Mux4x1_software.vds
+# Journal file: /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.runs/synth_1/vivado.jou
+# Running On: artecslab005, OS: Linux, CPU Frequency: 3758.679 MHz, CPU Physical cores: 4, Host memory: 33528 MB
+#-----------------------------------------------------------
+source Mux4x1_software.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1322.332 ; gain = 0.023 ; free physical = 23387 ; free virtual = 28567
+Command: read_checkpoint -auto_incremental -incremental /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/utils_1/imports/synth_1/Mux4x1_software.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/utils_1/imports/synth_1/Mux4x1_software.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Mux4x1_software -part xcu200-fsgd2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15973
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2762.969 ; gain = 397.629 ; free physical = 21540 ; free virtual = 26811
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Mux4x1_software' [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/sources_1/new/Mux4x1_software.sv:23]
+INFO: [Synth 8-226] default block is never used [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/sources_1/new/Mux4x1_software.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4x1_software' (0#1) [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/sources_1/new/Mux4x1_software.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2837.906 ; gain = 472.566 ; free physical = 21451 ; free virtual = 26717
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2855.719 ; gain = 490.379 ; free physical = 21439 ; free virtual = 26705
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2855.719 ; gain = 490.379 ; free physical = 21439 ; free virtual = 26705
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2855.719 ; gain = 0.000 ; free physical = 21439 ; free virtual = 26705
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_RESETL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODPRSL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_INTL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_LPMODE'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODSELL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[0]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[1]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_REFCLK_RESET'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_N'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_P'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_RESETL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:237]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:237]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODPRSL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:238]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_INTL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_LPMODE'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODSELL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:241]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[0]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[1]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_REFCLK_RESET'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_PERST'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SDA'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:263]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:263]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SCL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_MAIN_RESETN'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SCL'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SDA'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_RX'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_TX'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:281]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:281]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_TXD_MSP'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_RXD_MSP'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR4_RESET_GATE'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[0]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:299]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:299]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[1]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:300]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:300]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[2]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:301]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:301]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[3]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:302]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:302]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[0]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[1]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:307]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:307]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[2]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:308]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[3]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MSP_RSTn'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:323]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:323]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_SET1_FPGA'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:324]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:324]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED0_FPGA'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:325]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:325]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED1_FPGA'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:326]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:326]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED2_FPGA'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:327]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:327]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[34]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:334]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:334]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[35]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:335]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:335]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[8]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:336]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:336]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[8]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:337]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:337]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[33]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:338]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:338]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[32]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:339]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:339]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[39]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:340]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:340]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[38]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:341]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:341]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[36]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:342]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:342]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[37]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:343]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:343]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[9]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:344]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:344]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[9]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:345]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:345]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[57]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:346]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:346]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[56]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:347]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:347]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[14]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:348]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:348]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[14]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:349]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:349]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[59]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:350]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:350]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[58]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:351]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:351]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[61]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:352]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:352]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[62]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:353]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:353]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[60]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:354]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:354]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[63]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:355]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:355]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[15]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:356]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:356]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[15]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:357]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:357]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[9]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:358]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:358]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[8]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:359]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:359]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[2]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:360]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:360]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[2]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:361]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:361]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[11]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:362]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:362]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[10]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:363]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:363]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[13]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:364]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:364]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[12]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:365]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:365]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[15]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:366]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:366]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[14]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:367]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:367]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[3]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:368]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:368]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[3]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:369]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:369]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[1]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:370]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:370]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[0]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:371]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:371]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[0]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:372]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:372]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[0]'. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.srcs/constrs_1/imports/alveo-u200-xdc/alveo-u200-xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Mux4x1_software_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Mux4x1_software_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2940.531 ; gain = 0.000 ; free physical = 21396 ; free virtual = 26679
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2940.566 ; gain = 0.000 ; free physical = 21395 ; free virtual = 26678
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2940.566 ; gain = 575.227 ; free physical = 21392 ; free virtual = 26675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2940.566 ; gain = 575.227 ; free physical = 21392 ; free virtual = 26675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2940.566 ; gain = 575.227 ; free physical = 21392 ; free virtual = 26675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2940.566 ; gain = 575.227 ; free physical = 21390 ; free virtual = 26674
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input    4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2940.566 ; gain = 575.227 ; free physical = 21385 ; free virtual = 26674
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3224.633 ; gain = 859.293 ; free physical = 21049 ; free virtual = 26390
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3224.633 ; gain = 859.293 ; free physical = 21049 ; free virtual = 26390
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3233.648 ; gain = 868.309 ; free physical = 21042 ; free virtual = 26383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.523 ; gain = 883.184 ; free physical = 21041 ; free virtual = 26381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.523 ; gain = 883.184 ; free physical = 21041 ; free virtual = 26381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.523 ; gain = 883.184 ; free physical = 21040 ; free virtual = 26380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.523 ; gain = 883.184 ; free physical = 21039 ; free virtual = 26380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.523 ; gain = 883.184 ; free physical = 21039 ; free virtual = 26379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.523 ; gain = 883.184 ; free physical = 21038 ; free virtual = 26379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT6 |     4|
+|2     |IBUF |    18|
+|3     |OBUF |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.523 ; gain = 883.184 ; free physical = 21037 ; free virtual = 26378
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3248.523 ; gain = 798.336 ; free physical = 21026 ; free virtual = 26367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3248.531 ; gain = 883.184 ; free physical = 21026 ; free virtual = 26367
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3256.461 ; gain = 0.000 ; free physical = 21312 ; free virtual = 26654
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3318.688 ; gain = 0.000 ; free physical = 21244 ; free virtual = 26586
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 18 instances
+
+Synth Design complete | Checksum: f861ce80
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 3318.723 ; gain = 1996.391 ; free physical = 21244 ; free virtual = 26586
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2849.520; main = 2604.821; forked = 379.149
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4208.035; main = 3318.688; forked = 974.387
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3318.723 ; gain = 0.000 ; free physical = 21244 ; free virtual = 26586
+INFO: [Common 17-1381] The checkpoint '/home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.runs/synth_1/Mux4x1_software.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Mux4x1_software_utilization_synth.rpt -pb Mux4x1_software_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 14 17:41:52 2024...

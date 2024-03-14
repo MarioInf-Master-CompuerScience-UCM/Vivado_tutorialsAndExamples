@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Mux4x1_software_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Mux4x1_software_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999,994 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,000,002 ps"></ZoomEndTime>
+      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="93"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject type="array" fp_name="/Mux4x1_software_test/in_select">
+      <obj_property name="ElementShortName">in_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">in_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Mux4x1_software_test/in_din0">
+      <obj_property name="ElementShortName">in_din0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in_din0[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Mux4x1_software_test/in_din1">
+      <obj_property name="ElementShortName">in_din1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in_din1[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Mux4x1_software_test/in_din2">
+      <obj_property name="ElementShortName">in_din2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in_din2[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Mux4x1_software_test/in_din3">
+      <obj_property name="ElementShortName">in_din3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in_din3[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Mux4x1_software_test/out_result">
+      <obj_property name="ElementShortName">out_result[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out_result[3:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri Mar  8 14:16:25 2024
+# Process ID: 21081
+# Current directory: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_lmb_bram_1_synth_1
+# Command line: vivado -log design_1_lmb_bram_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_lmb_bram_1.tcl
+# Log file: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_lmb_bram_1_synth_1/design_1_lmb_bram_1.vds
+# Journal file: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/design_1_lmb_bram_1_synth_1/vivado.jou
+# Running On: artecslab005, OS: Linux, CPU Frequency: 3787.169 MHz, CPU Physical cores: 4, Host memory: 33528 MB
+#-----------------------------------------------------------
+source design_1_lmb_bram_1.tcl -notrace

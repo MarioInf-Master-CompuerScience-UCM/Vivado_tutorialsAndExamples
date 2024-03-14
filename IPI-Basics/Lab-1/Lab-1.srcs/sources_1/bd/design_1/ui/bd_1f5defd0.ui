@@ -1,0 +1,92 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_Layers":"/mdm_1_debug_sys_rst:true|/rst_clk_wiz_1_100M_peripheral_aresetn:true|/reset_rtl_0_1:true|/microblaze_0_Clk:true|/rst_clk_wiz_1_100M_mb_reset:true|/rst_clk_wiz_1_100M_bus_struct_reset:true|/hier_0/mdm_1_debug_sys_rst:true|",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"-173,-9",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Interfaces View_ExpandedHierarchyInLayout":"/hier_0",
+   "Interfaces View_Layers":"/mdm_1_debug_sys_rst:false|/rst_clk_wiz_1_100M_peripheral_aresetn:false|/reset_rtl_0_1:false|/microblaze_0_Clk:false|/rst_clk_wiz_1_100M_mb_reset:false|/rst_clk_wiz_1_100M_bus_struct_reset:false|",
+   "Interfaces View_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port gpio_rtl_0 -pg 1 -lvl 5 -x 1910 -y 270 -defaultsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 5 -x 1910 -y 370 -defaultsOSRD
+preplace port diff_clock_rtl_0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1550 -y 270 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -x 1550 -y 160 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 3 -x 1550 -y 370 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 1290 -y 290 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 4 -x 1780 -y 160 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 2 -x 1290 -y 60 -defaultsOSRD
+preplace inst hier_0 -pg 1 -lvl 1 -x 140 -y 140 -defaultsOSRD
+preplace inst hier_0|microblaze_0 -pg 1 -lvl 2 -x 540 -y 260 -defaultsOSRD
+preplace inst hier_0|mdm_1 -pg 1 -lvl 1 -x 190 -y 260 -defaultsOSRD
+preplace inst hier_0|microblaze_0_local_memory -pg 1 -lvl 3 -x 910 -y 200 -defaultsOSRD
+preplace netloc smartconnect_0_M00_AXI 1 2 1 NJ 270
+preplace netloc smartconnect_0_M01_AXI 1 2 1 1430 160n
+preplace netloc smartconnect_0_M02_AXI 1 2 1 1430J 310n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 N 150
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 3 1 N 170
+preplace netloc axi_gpio_0_GPIO 1 3 2 NJ 270 NJ
+preplace netloc axi_uartlite_0_UART 1 3 2 NJ 370 NJ
+preplace netloc diff_clock_rtl_0_1 1 0 2 NJ 60 NJ
+preplace netloc microblaze_0_M_AXI_DP 1 1 1 NJ 280
+preplace netloc hier_0|microblaze_0_Clk 1 1 2 300 350 800J
+preplace netloc hier_0|mdm_1_debug_sys_rst 1 1 1 N 270
+preplace netloc hier_0|microblaze_0_dlmb_1 1 2 1 780 170n
+preplace netloc hier_0|microblaze_0_ilmb_1 1 2 1 790 190n
+preplace netloc hier_0|microblaze_0_debug 1 1 1 N 250
+preplace netloc hier_0|microblaze_0_M_AXI_DP 1 2 2 NJ 280 NJ
+levelinfo -pg 1 0 140 1290 1550 1780 1910
+levelinfo -hier hier_0 * 190 540 910 *
+pagesize -pg 1 -db -bbox -sgen -160 0 2030 430
+pagesize -hier hier_0 -db -bbox -sgen 80 110 1050 360
+",
+   "Interfaces View_ScaleFactor":"0.683898",
+   "Interfaces View_TopLeft":"-156,-241",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port gpio_rtl_0 -pg 1 -lvl 7 -x 1820 -y 410 -defaultsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 7 -x 1820 -y 260 -defaultsOSRD
+preplace port diff_clock_rtl_0 -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1400 -y 410 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -x 1400 -y 130 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -x 1400 -y 270 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -x 1070 -y 230 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 6 -x 1670 -y 130 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 140 -y 330 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 460 -y 270 -defaultsOSRD
+preplace inst hier_0 -pg 1 -lvl 3 -x 780 -y 80 -defaultsOSRD
+preplace inst hier_1 -pg 1 -lvl 3 -x 780 -y 230 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1400 -y 600 -defaultsOSRD
+preplace netloc clk_wiz_1_locked 1 1 1 270 310n
+preplace netloc mdm_1_debug_sys_rst 1 0 4 20 260 260 380 NJ 380 900
+preplace netloc microblaze_0_Clk 1 1 4 280 370 640 300 920 320 1250
+preplace netloc reset_rtl_0_1 1 0 2 NJ 250 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 1 660 100n
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 1 650 80n
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 3 N 310 930 330 1260
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 N 120
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 5 1 N 140
+preplace netloc axi_gpio_0_GPIO 1 5 2 NJ 410 NJ
+preplace netloc axi_uartlite_0_UART 1 5 2 NJ 260 NJ
+preplace netloc diff_clock_rtl_0_1 1 0 1 NJ 320
+preplace netloc hier_1_M_AXI_DP 1 3 1 N 220
+preplace netloc microblaze_0_M_AXI_DP 1 3 1 920 70n
+preplace netloc smartconnect_0_M00_AXI 1 4 1 1240 210n
+preplace netloc smartconnect_0_M01_AXI 1 4 1 1210 110n
+preplace netloc smartconnect_0_M02_AXI 1 4 1 N 250
+levelinfo -pg 1 0 140 460 780 1070 1400 1670 1820
+pagesize -pg 1 -db -bbox -sgen -160 0 2000 1530
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"5",
+   "da_bram_cntlr_cnt":"2",
+   "da_clkrst_cnt":"3",
+   "da_mb_cnt":"1"
+}

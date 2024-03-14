@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mario_local/Documentos/TFM/VivadoTutorials/Mux4x1_software/project/Mux4x1_software.sim/sim_1/synth/func/xsim/Mux4x1_software_test_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4x1_software
+INFO: [VRFC 10-311] analyzing module glbl

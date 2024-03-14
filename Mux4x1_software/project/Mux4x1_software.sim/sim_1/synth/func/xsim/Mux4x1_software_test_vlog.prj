@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Mux4x1_software_test_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../Mux4x1_software.srcs/sim_1/new/Mux4x1_software_test.sv" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1276 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.301 ; gain = 0.023 ; free physical = 20102 ; free virtual = 26260
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2023.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xcu200-fsgd2104-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.dcp' for cell 'design_1_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0.dcp' for cell 'design_1_i/axi_bram_ctrl_0_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp' for cell 'design_1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.dcp' for cell 'design_1_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.dcp' for cell 'design_1_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp' for cell 'design_1_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1.dcp' for cell 'design_1_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp' for cell 'design_1_i/hier_0/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp' for cell 'design_1_i/hier_0/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp' for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp' for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp' for cell 'design_1_i/hier_0/microblaze_0_local_memory/lmb_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.dcp' for cell 'design_1_i/hier_1/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.dcp' for cell 'design_1_i/hier_1/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1.dcp' for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1.dcp' for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1.dcp' for cell 'design_1_i/hier_1/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2582.895 ; gain = 0.000 ; free physical = 18888 ; free virtual = 25015
+INFO: [Netlist 29-17] Analyzing 756 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: design_1_i/system_ila_0/inst/ila_lib UUID: cd4c83c8-23a6-596d-99ad-09be1335c6b0 
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_w_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc:178]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_53/bd_48ac_m02wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_w_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc:178]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/bd_48ac_m00awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:76]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:97]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc:97]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/bd_48ac_m00wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_40/bd_48ac_m00bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_40/bd_48ac_m00bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_43/bd_48ac_m01arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_43/bd_48ac_m01arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_44/bd_48ac_m01rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_44/bd_48ac_m01rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_45/bd_48ac_m01awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_45/bd_48ac_m01awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_46/bd_48ac_m01wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_46/bd_48ac_m01wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_47/bd_48ac_m01bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_47/bd_48ac_m01bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_50/bd_48ac_m02arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_ar_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_50/bd_48ac_m02arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_ar_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_51/bd_48ac_m02rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_51/bd_48ac_m02rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_52/bd_48ac_m02awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_aw_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_52/bd_48ac_m02awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_aw_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_37/bd_48ac_m00rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_37/bd_48ac_m00rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_54/bd_48ac_m02bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_b_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_54/bd_48ac_m02bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m02_nodes/m02_b_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:54]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/hier_0/microblaze_0/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/hier_0/microblaze_0/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc] for cell 'design_1_i/hier_1/microblaze_0/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc] for cell 'design_1_i/hier_1/microblaze_0/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/bd_48ac_sarn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/bd_48ac_sarn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_arni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_ar_node/inst'
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_arni_0_clocks.xdc:119]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_arni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_ar_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_rni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst'
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_rni_0_clocks.xdc:119]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_rni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/bd_48ac_awni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_aw_node/inst'
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/bd_48ac_awni_0_clocks.xdc:119]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/bd_48ac_awni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_aw_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/bd_48ac_wni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst'
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/bd_48ac_wni_0_clocks.xdc:119]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/bd_48ac_wni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/bd_48ac_bni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst'
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/bd_48ac_bni_0_clocks.xdc:119]
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/bd_48ac_bni_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_22/bd_48ac_srn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_22/bd_48ac_srn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_23/bd_48ac_sawn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_23/bd_48ac_sawn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_24/bd_48ac_swn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_24/bd_48ac_swn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_25/bd_48ac_sbn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_25/bd_48ac_sbn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_30/bd_48ac_sarn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_30/bd_48ac_sarn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_31/bd_48ac_srn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_r_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_31/bd_48ac_srn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_r_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_32/bd_48ac_sawn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_aw_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_32/bd_48ac_sawn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_aw_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_33/bd_48ac_swn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_w_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_33/bd_48ac_swn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_w_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_34/bd_48ac_sbn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_b_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_34/bd_48ac_sbn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_b_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_36/bd_48ac_m00arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_36/bd_48ac_m00arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_RESETL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODPRSL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_INTL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_LPMODE'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODSELL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_REFCLK_RESET'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_N'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_P'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_RESETL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:237]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:237]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODPRSL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:238]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_INTL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_LPMODE'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODSELL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:241]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_REFCLK_RESET'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_PERST'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SDA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:263]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:263]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SCL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_MAIN_RESETN'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SCL'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SDA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_RX'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_TX'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:281]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:281]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_TXD_MSP'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_RXD_MSP'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR4_RESET_GATE'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:299]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:299]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:300]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:300]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:301]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:301]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:302]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:302]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:307]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:307]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:308]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MSP_RSTn'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:323]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:323]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_SET1_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:324]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:324]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED0_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:325]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:325]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED1_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:326]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:326]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED2_FPGA'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:327]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:327]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[34]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:334]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:334]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[35]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:335]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:335]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[8]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:336]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:336]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[8]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:337]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:337]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[33]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:338]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:338]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[32]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:339]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:339]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[39]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:340]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:340]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[38]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:341]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:341]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[36]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:342]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:342]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[37]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:343]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:343]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[9]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:344]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:344]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[9]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:345]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:345]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[57]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:346]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:346]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[56]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:347]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:347]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[14]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:348]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:348]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[14]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:349]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:349]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[59]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:350]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:350]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[58]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:351]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:351]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[61]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:352]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:352]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[62]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:353]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:353]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[60]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:354]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:354]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[63]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:355]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:355]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[15]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:356]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:356]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[15]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:357]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:357]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[9]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:358]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:358]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[8]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:359]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:359]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:360]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:360]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[2]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:361]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:361]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[11]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:362]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:362]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[10]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:363]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:363]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[13]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:364]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:364]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[12]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:365]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:365]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[15]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:366]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:366]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[14]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:367]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:367]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:368]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:368]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[3]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:369]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:369]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[1]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:370]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:370]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:371]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:371]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:372]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:372]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[0]'. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc:373]
+Finished Parsing XDC File [/home/mario_local/Documentos/AlveoU200_documents/alveo-u200-xdc/alveo-u200-xdc.xdc]
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/hier_0/mdm_1/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/hier_0/mdm_1/U0'
+Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc] for cell 'design_1_i/hier_1/mdm_1/U0'
+Finished Parsing XDC File [/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc] for cell 'design_1_i/hier_1/mdm_1/U0'
+INFO: [Project 1-1714] 71 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_0/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_0/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_0/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_0/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_1/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_1/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_1/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/hier_1/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/data/mb_bootloop_le.elf 
+INFO: [Project 1-1687] 1299 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3435.355 ; gain = 0.000 ; free physical = 18408 ; free virtual = 24547
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 369 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 140 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 32 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 160 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 32 instances
+
+66 Infos, 205 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3435.355 ; gain = 2041.539 ; free physical = 18409 ; free virtual = 24549
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3435.355 ; gain = 0.000 ; free physical = 18390 ; free virtual = 24530
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: c3cc283e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3435.355 ; gain = 0.000 ; free physical = 18387 ; free virtual = 24527
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = c062713b51db69c8.
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3503.992 ; gain = 0.000 ; free physical = 18118 ; free virtual = 24253
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3503.992 ; gain = 0.000 ; free physical = 18113 ; free virtual = 24248
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 497426f2
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18113 ; free virtual = 24248
+Phase 1.1 Core Generation And Design Setup | Checksum: 497426f2
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18113 ; free virtual = 24248
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 497426f2
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18113 ; free virtual = 24248
+Phase 1 Initialization | Checksum: 497426f2
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18113 ; free virtual = 24248
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+CRITICAL WARNING: [Timing 38-285] Generated clock design_1_i/hier_0/mdm_1/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O with source pin design_1_i/hier_0/mdm_1/U0/bscan_ext_update does not have a valid master clock or valid waveform.
+Resolution: Check that either a master clock has been defined on the source pin of the generated clock or that a clock reaches that source pin. The waveform of the master clock must be valid.
+CRITICAL WARNING: [Timing 38-285] Generated clock design_1_i/hier_0/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O with source pin design_1_i/hier_0/mdm_1/U0/bscan_ext_drck does not have a valid master clock or valid waveform.
+Resolution: Check that either a master clock has been defined on the source pin of the generated clock or that a clock reaches that source pin. The waveform of the master clock must be valid.
+CRITICAL WARNING: [Timing 38-285] Generated clock design_1_i/hier_1/mdm_1/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O with source pin design_1_i/hier_1/mdm_1/U0/bscan_ext_update does not have a valid master clock or valid waveform.
+Resolution: Check that either a master clock has been defined on the source pin of the generated clock or that a clock reaches that source pin. The waveform of the master clock must be valid.
+CRITICAL WARNING: [Timing 38-285] Generated clock design_1_i/hier_1/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O with source pin design_1_i/hier_1/mdm_1/U0/bscan_ext_drck does not have a valid master clock or valid waveform.
+Resolution: Check that either a master clock has been defined on the source pin of the generated clock or that a clock reaches that source pin. The waveform of the master clock must be valid.
+Phase 2.1 Timer Update | Checksum: 497426f2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18113 ; free virtual = 24248
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 497426f2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18113 ; free virtual = 24248
+Phase 2 Timer Update And Timing Data Collection | Checksum: 497426f2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18113 ; free virtual = 24248
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 7 inverters resulting in an inversion of 52 pins
+INFO: [Opt 31-138] Pushed 92 inverter(s) to 506 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1956aee32
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18069 ; free virtual = 24232
+Retarget | Checksum: 1956aee32
+INFO: [Opt 31-389] Phase Retarget created 174 cells and removed 329 cells
+INFO: [Opt 31-1021] In phase Retarget, 191 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 4 load pin(s).
+Phase 4 Constant propagation | Checksum: 18e2ba634
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18068 ; free virtual = 24231
+Constant propagation | Checksum: 18e2ba634
+INFO: [Opt 31-389] Phase Constant propagation created 113 cells and removed 1089 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 243 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Opt 31-120] Instance design_1_i/hier_1/mdm_1/U0/MDM_Core_I1 (design_1_mdm_1_1_MDM_Core) has been optimized to an empty box cell during sweep but it has constraints that prevent its removal. Empty box cells do not impact the implementation flow but they have no functional relevance.
+Resolution: If this is not expected, please check for DONT_TOUCH properties or timing constraint set on the empty box cell or on nets connected to the cell. If found, remove the relevant DONT_TOUCH property or timing constraint and re-run opt_design.
+Phase 5 Sweep | Checksum: 1cd5b5920
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18053 ; free virtual = 24216
+Sweep | Checksum: 1cd5b5920
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 743 cells
+INFO: [Opt 31-1021] In phase Sweep, 1364 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1cd5b5920
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18053 ; free virtual = 24215
+BUFG optimization | Checksum: 1cd5b5920
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_CDONE/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_CDONE/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_C due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_D due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_C due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_D due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][1]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][2]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][3]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][4]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][5]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][6]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][7]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][1]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][2]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][3]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][4]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][5]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][6]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][7]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][10]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][11]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][12]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][13]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][14]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][15]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][16]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][17]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][18]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][19]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][1]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][20]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][21]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][22]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][23]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][24]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][25]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][26]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][27]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][28]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][29]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][2]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][30]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][31]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][3]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][4]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][5]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][6]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][7]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][8]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/PC_Buffer_reg[3][9]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][0]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][10]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][11]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][12]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][13]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][14]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][15]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][16]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][17]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][18]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][19]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][1]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][20]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][21]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][22]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][23]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][24]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][25]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][26]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][27]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][28]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][29]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][2]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][30]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][31]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][32]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][33]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][34]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][35]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][36]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][37]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][38]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][39]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][3]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][40]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][41]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][42]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][4]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][5]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][6]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][7]_srl3 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/hier_0/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ibuffer_reg[2][8]_srl3 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1cd5b5920
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18053 ; free virtual = 24215
+Shift Register Optimization | Checksum: 1cd5b5920
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 25 pins
+Phase 8 Post Processing Netlist | Checksum: 10f19bffe
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18052 ; free virtual = 24215
+Post Processing Netlist | Checksum: 10f19bffe
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 202 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 847db377
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18052 ; free virtual = 24215
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3503.992 ; gain = 0.000 ; free physical = 18052 ; free virtual = 24215
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 847db377
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18052 ; free virtual = 24215
+Phase 9 Finalization | Checksum: 847db377
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18052 ; free virtual = 24215
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             174  |             329  |                                            191  |
+|  Constant propagation         |             113  |            1089  |                                            243  |
+|  Sweep                        |               0  |             743  |                                           1364  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            202  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 847db377
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 3503.992 ; gain = 19.844 ; free physical = 18052 ; free virtual = 24215
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3503.992 ; gain = 0.000 ; free physical = 18052 ; free virtual = 24215
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 16 BRAM(s) out of a total of 28 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 20 newly gated: 0 Total Ports: 56
+Ending PowerOpt Patch Enables Task | Checksum: 476ae8ec
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 4031.879 ; gain = 0.000 ; free physical = 17662 ; free virtual = 23822
+Ending Power Optimization Task | Checksum: 476ae8ec
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4031.879 ; gain = 527.887 ; free physical = 17662 ; free virtual = 23822
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 89c2a500
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.98 . Memory (MB): peak = 4031.879 ; gain = 0.000 ; free physical = 17681 ; free virtual = 23821
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4031.879 ; gain = 0.000 ; free physical = 17681 ; free virtual = 23821
+Ending Final Cleanup Task | Checksum: 89c2a500
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4031.879 ; gain = 0.000 ; free physical = 17681 ; free virtual = 23823
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4031.879 ; gain = 0.000 ; free physical = 17681 ; free virtual = 23821
+Ending Netlist Obfuscation Task | Checksum: 89c2a500
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4031.879 ; gain = 0.000 ; free physical = 17681 ; free virtual = 23821
+INFO: [Common 17-83] Releasing license: Implementation
+111 Infos, 305 Warnings, 104 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 4031.879 ; gain = 596.523 ; free physical = 17681 ; free virtual = 23821
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4046.910 ; gain = 0.000 ; free physical = 17685 ; free virtual = 23826
+INFO: [Common 17-1381] The checkpoint '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4046.910 ; gain = 0.000 ; free physical = 17675 ; free virtual = 23820
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 0d0cdd1d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4046.910 ; gain = 0.000 ; free physical = 17675 ; free virtual = 23820
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4046.910 ; gain = 0.000 ; free physical = 17675 ; free virtual = 23820
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1a47bab59
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 4691.355 ; gain = 644.445 ; free physical = 17025 ; free virtual = 23194
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1f1a82d3a
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 4938.371 ; gain = 891.461 ; free physical = 16720 ; free virtual = 22882
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1f1a82d3a
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 4938.371 ; gain = 891.461 ; free physical = 16720 ; free virtual = 22882
+Phase 1 Placer Initialization | Checksum: 1f1a82d3a
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 4938.371 ; gain = 891.461 ; free physical = 16720 ; free virtual = 22882
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1b2e2457b
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 4938.371 ; gain = 891.461 ; free physical = 16734 ; free virtual = 22887
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1b2e2457b
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 4938.371 ; gain = 891.461 ; free physical = 16733 ; free virtual = 22869
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1b2e2457b
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:42 . Memory (MB): peak = 5349.355 ; gain = 1302.445 ; free physical = 16295 ; free virtual = 22432
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 2893c70e8
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:42 . Memory (MB): peak = 5381.371 ; gain = 1334.461 ; free physical = 16295 ; free virtual = 22431
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 2893c70e8
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:42 . Memory (MB): peak = 5381.371 ; gain = 1334.461 ; free physical = 16295 ; free virtual = 22431
+Phase 2.1.1 Partition Driven Placement | Checksum: 2893c70e8
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:42 . Memory (MB): peak = 5381.371 ; gain = 1334.461 ; free physical = 16294 ; free virtual = 22430
+Phase 2.1 Floorplanning | Checksum: 1ef2b0711
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:42 . Memory (MB): peak = 5381.371 ; gain = 1334.461 ; free physical = 16294 ; free virtual = 22430
+
+Phase 2.2 Physical Synthesis After Floorplan
+INFO: [Physopt 32-670] No setup violation found.  PSIP Post Floorplan SLR Replication was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5381.371 ; gain = 0.000 ; free physical = 16294 ; free virtual = 22430
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                         |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  PSIP Post Floorplan SLR Replication  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Total                                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis After Floorplan | Checksum: 1ef2b0711
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:42 . Memory (MB): peak = 5381.371 ; gain = 1334.461 ; free physical = 16294 ; free virtual = 22430
+
+Phase 2.3 Update Timing before SLR Path Opt
+Phase 2.3 Update Timing before SLR Path Opt | Checksum: 1ef2b0711
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:42 . Memory (MB): peak = 5381.371 ; gain = 1334.461 ; free physical = 16294 ; free virtual = 22430
+
+Phase 2.4 Post-Processing in Floorplanning
+Phase 2.4 Post-Processing in Floorplanning | Checksum: 1ef2b0711
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:42 . Memory (MB): peak = 5381.371 ; gain = 1334.461 ; free physical = 16294 ; free virtual = 22430
+
+Phase 2.5 Global Placement Core
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1d60c1f32
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:07 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15871 ; free virtual = 22008
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 479 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 223 nets or LUTs. Breaked 0 LUT, combined 223 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 2 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5894.406 ; gain = 0.000 ; free physical = 15871 ; free virtual = 22008
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            223  |                   223  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            223  |                   223  |           0  |           5  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 200013bf2
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:09 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15871 ; free virtual = 22008
+Phase 2.5 Global Placement Core | Checksum: 1b628bd16
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:30 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 16057 ; free virtual = 22206
+Phase 2 Global Placement | Checksum: 1b628bd16
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:30 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 16057 ; free virtual = 22206
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 22194f00a
+
+Time (s): cpu = 00:04:02 ; elapsed = 00:01:40 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 16056 ; free virtual = 22197
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 297e59fc2
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:41 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 16069 ; free virtual = 22210
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 2a5f6faaa
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:01:51 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15990 ; free virtual = 22131
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 200f79006
+
+Time (s): cpu = 00:04:38 ; elapsed = 00:01:52 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15922 ; free virtual = 22063
+Phase 3.3.2 Slice Area Swap | Checksum: 2be1cdb3a
+
+Time (s): cpu = 00:04:39 ; elapsed = 00:01:53 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15922 ; free virtual = 22063
+Phase 3.3 Small Shape DP | Checksum: 1b19c5877
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:01:54 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15922 ; free virtual = 22063
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 20b302b26
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:01:54 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15921 ; free virtual = 22062
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 218ce8cc4
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:01:54 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15917 ; free virtual = 22059
+Phase 3 Detail Placement | Checksum: 218ce8cc4
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:01:54 . Memory (MB): peak = 5894.406 ; gain = 1847.496 ; free physical = 15917 ; free virtual = 22059
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 13b51baa9
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=7.114 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 197691e73
+
+Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.29 . Memory (MB): peak = 5920.992 ; gain = 0.000 ; free physical = 15779 ; free virtual = 21949
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 197691e73
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 5920.992 ; gain = 0.000 ; free physical = 15778 ; free virtual = 21949
+Phase 4.1.1.1 BUFG Insertion | Checksum: 13b51baa9
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:10 . Memory (MB): peak = 5920.992 ; gain = 1874.082 ; free physical = 15778 ; free virtual = 21949
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, moved BUFGs: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 13b51baa9
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:10 . Memory (MB): peak = 5920.992 ; gain = 1874.082 ; free physical = 15778 ; free virtual = 21949
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=7.114. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 1d9c6137d
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:10 . Memory (MB): peak = 5920.992 ; gain = 1874.082 ; free physical = 15778 ; free virtual = 21949
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=7.114. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 1d9c6137d
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:11 . Memory (MB): peak = 5920.992 ; gain = 1874.082 ; free physical = 15776 ; free virtual = 21949
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:11 . Memory (MB): peak = 5920.992 ; gain = 1874.082 ; free physical = 15776 ; free virtual = 21949
+Phase 4.1 Post Commit Optimization | Checksum: 1d9c6137d
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:11 . Memory (MB): peak = 5920.992 ; gain = 1874.082 ; free physical = 15776 ; free virtual = 21949
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5985.023 ; gain = 0.000 ; free physical = 15812 ; free virtual = 21949
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 27eebe490
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:44 . Memory (MB): peak = 5985.023 ; gain = 1938.113 ; free physical = 15812 ; free virtual = 21949
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR0:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+SLR1:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR2:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 27eebe490
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:44 . Memory (MB): peak = 5985.023 ; gain = 1938.113 ; free physical = 15812 ; free virtual = 21949
+Phase 4.3 Placer Reporting | Checksum: 27eebe490
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:44 . Memory (MB): peak = 5985.023 ; gain = 1938.113 ; free physical = 15812 ; free virtual = 21949
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5985.023 ; gain = 0.000 ; free physical = 15812 ; free virtual = 21949
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:44 . Memory (MB): peak = 5985.023 ; gain = 1938.113 ; free physical = 15812 ; free virtual = 21949
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2918ec8ad
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:45 . Memory (MB): peak = 5985.023 ; gain = 1938.113 ; free physical = 15812 ; free virtual = 21949
+Ending Placer Task | Checksum: 1d27c0bc0
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:45 . Memory (MB): peak = 5985.023 ; gain = 1938.113 ; free physical = 15811 ; free virtual = 21949
+153 Infos, 305 Warnings, 104 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:06:29 ; elapsed = 00:02:46 . Memory (MB): peak = 5985.023 ; gain = 1938.113 ; free physical = 15811 ; free virtual = 21949
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.47 . Memory (MB): peak = 5985.023 ; gain = 0.000 ; free physical = 15814 ; free virtual = 21952
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.15 . Memory (MB): peak = 5985.023 ; gain = 0.000 ; free physical = 15809 ; free virtual = 21947
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5985.023 ; gain = 0.000 ; free physical = 15806 ; free virtual = 21947
+Abnormal program termination (11)
+Please check '/home/mario_local/Documentos/TFM/VivadoTutorial/IPI-Basics/Lab-1/Lab-1.runs/impl_1/hs_err_pid39266.log' for details
+segfault in /opt/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado -exec vivado -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace, exiting...

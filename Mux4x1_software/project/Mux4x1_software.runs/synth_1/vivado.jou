@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Mar 14 17:41:14 2024
+# Process ID: 15925
+# Current directory: /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.runs/synth_1
+# Command line: vivado -log Mux4x1_software.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mux4x1_software.tcl
+# Log file: /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.runs/synth_1/Mux4x1_software.vds
+# Journal file: /home/mario_local/personal_repositories/Vivado_tutorialsAndExamples/Mux4x1_software/project/Mux4x1_software.runs/synth_1/vivado.jou
+# Running On: artecslab005, OS: Linux, CPU Frequency: 3758.679 MHz, CPU Physical cores: 4, Host memory: 33528 MB
+#-----------------------------------------------------------
+source Mux4x1_software.tcl -notrace

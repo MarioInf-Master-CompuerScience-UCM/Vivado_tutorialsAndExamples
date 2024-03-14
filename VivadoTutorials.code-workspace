@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "IPI-Basics"
+    },
+    {
+      "path": "Mux4x1_software"
+    },
+    {
+      "path": "Mux4x1_hardware"
+    },
+    {
+      "path": "Adder_4bits"
+    },
+    {
+      "path": "."
+    },
+  ]
+}

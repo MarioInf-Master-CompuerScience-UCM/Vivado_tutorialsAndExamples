@@ -1,0 +1,4 @@
+Running: xsim.dir/Mux4x1_software_test_behav/xsimk -simmode gui -wdb Mux4x1_software_test_behav.wdb -simrunnum 0 -socket 51341
+Design successfully loaded
+Design Loading Memory Usage: 23196 KB (Peak: 23776 KB)
+Design Loading CPU Usage: 20 ms

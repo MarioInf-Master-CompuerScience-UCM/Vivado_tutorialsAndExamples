@@ -32,4 +32,4 @@
 *.app
 
 # Customs
-logs/
+**/logs/*
